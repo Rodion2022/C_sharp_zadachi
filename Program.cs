@@ -49,3 +49,26 @@ else
 {
     Console.WriteLine("Число " + number1 + "является: ЧЁТНЫМ");
 }
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine ("Введите число");
+number1 = Convert.ToInt32(Console.ReadLine());
+
+int i = 1;
+bool not = true;
+
+Console.WriteLine("Чётные числа от 1 до " + number1);
+while (i <= number1)
+{
+if (i % 2 != 1)
+{
+Console.Write(i + ", ");
+not = false;
+}
+i++;
+}
+if (not)
+{
+    Console.WriteLine("Четных чисел нет");
+}
