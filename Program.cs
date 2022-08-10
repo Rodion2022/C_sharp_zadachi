@@ -26,11 +26,26 @@ int max = number1;
 
 if (number2 > max)
 {
-    number2 = max;
+    max = number2;
 }
 
 if (number3 > max)
 {
-    number3 = max;
+    max = number3;
 }
 Console.WriteLine("максимальное из введённых чисел" + max);
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.WriteLine("Введите число");
+
+number1 = Convert.ToInt32(Console.ReadLine());
+
+if (number1 % 2 == 1)
+{
+    Console.WriteLine("Число " + number1 + " является: НЕЧЁТНЫМ");
+}
+else
+{
+    Console.WriteLine("Число " + number1 + "является: ЧЁТНЫМ");
+}
